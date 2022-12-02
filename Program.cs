@@ -11,7 +11,7 @@ int userNumber = Convert.ToInt32(Console.ReadLine());
 int result = CutNumber(userNumber);
 Console.WriteLine($"Вторая цифра вашего числа: {result}");
 */
-
+/*
 int PrintThirdDigit(int number)
 {
     if (number > 99)
@@ -44,4 +44,18 @@ else
 {
     Console.Write("В вашем числе нет третьей цифры");
 }
+*/
+
+bool DayOfWeek (int day)
+{
+    if (day == 6 || day ==7)
+        return true;
+    else 
+        return false;
+}
+
+Console.Write("Хотите узнать является ли день недели выходным? Введите его порядковый номер: ");
+int userDay = Convert.ToInt32(Console.ReadLine());
+bool result = DayOfWeek(userDay);
+Console.WriteLine(result);
 
